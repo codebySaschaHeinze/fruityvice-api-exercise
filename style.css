@@ -1,0 +1,10 @@
+.main_content_container {
+  margin-top: 100px;
+  margin-bottom: 60px;
+  max-width: 1920px;
+}
+
+.impressum_data_protection_container {
+  padding: 30px;
+  background-color: white;
+}
