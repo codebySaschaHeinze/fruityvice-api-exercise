@@ -1,13 +1,9 @@
 function init() {
-  renderAllFruits();
-}
-
-function renderAllFruits() {
   getAllFruits();
 }
 
 async function getAllFruits() {
-  let fruitsRef = document.getElementById("main-content-container");
+  let fruitsRef = document.getElementById("fruits-container");
   fruitsRef.innerHTML = "";
   try {
     const proxy = "https://cors-anywhere.herokuapp.com/";

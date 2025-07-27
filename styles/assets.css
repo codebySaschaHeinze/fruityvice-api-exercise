@@ -4,6 +4,7 @@ h1 {
 }
 
 h2 {
+  margin-top: 0px;
   margin-bottom: 20px;
 }
 
@@ -24,4 +25,14 @@ h2 {
 .impressum_data_protection_container h3 {
   margin-top: 50px;
   margin-bottom: 20px;
+}
+
+.fruit_container td:last-child {
+  text-align: end;
+}
+
+.search_container button {
+}
+
+.search_container input {
 }
