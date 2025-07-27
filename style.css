@@ -8,3 +8,10 @@
   padding: 30px;
   background-color: white;
 }
+
+.fruit_container {
+  padding: 20px;
+  margin: 20px;
+  background-color: coral;
+  border-radius: 8px;
+}

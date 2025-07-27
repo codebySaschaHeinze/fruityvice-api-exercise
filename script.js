@@ -3,14 +3,19 @@ function init() {
 }
 
 function renderAllFruits() {
-  let fruitsRef = document.getElementById("main-content-container");
-  fruitsRef.innerHTML = "";
+  getAllFruits();
 }
 
 async function getAllFruits() {
-  const response = await fetch("https://www.fruityvice.com/api/fruit/all");
+  let fruitsRef = document.getElementById("main-content-container");
+  fruitsRef.innerHTML = "";
+  const proxy = "https://cors-anywhere.herokuapp.com/";
+  const url = "https://www.fruityvice.com/api/fruit/all";
+  const response = await fetch(proxy + url);
   const fruits = await response.json();
-  for (let fruitIndex = 0; fruitIndex < fruits.length; fruitIndex++) {
-    const fruit = fruits[fruitIndex];
+  for (let i = 0; i < fruits.length; i++) {
+    const fruit = fruits[i];
+    fruitsRef.innerHTML += fruitTemplate(fruit);
+    console.log(fruit);
   }
 }
